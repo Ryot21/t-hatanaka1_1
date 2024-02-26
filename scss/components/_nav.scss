@@ -271,9 +271,9 @@
 		transition: .5s all;
 		@include min(768){top: 40%;}
 	}
-	&_sub{
+	&_sub{// TB, PC > header > nav
 		position: absolute;
-		top: 65%;
+		top: 70%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		white-space: nowrap;
@@ -290,15 +290,15 @@
 		@include min(768){top: 68%;}
 		@include min(1400){top: 70%;}
 	}
-	&_sub03{
+	&_sub03{// PC > header > お問い合わせ
 		position: absolute;
 		top: 67%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		white-space: nowrap;
 		transition: .5s all;
-		@include min(768){top: 64%;}
-		@include min(1400){top: 60%;}
+		@include min(768){top: 68%;}
+		@include min(1400){top: 65%;}
 	}
 	&_footer{
 		// アクティブ時
@@ -345,6 +345,29 @@
 			pointer-events: none;
 			&::before{
 				content: "coming soom";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 60% !important;
+				color: white;
+				// background: #e40012;
+				background: $site-color01;
+				display: block;
+				z-index: 1;
+				text-align: center;
+				padding: 3px 0 4px;
+				opacity: 0.9;
+			}
+			span{opacity: .5;}
+		}
+	}
+	&.-soldOut{
+		pointer-events: none;
+		a{
+			pointer-events: none;
+			&::before{
+				content: "sold out";
 				position: absolute;
 				top: 50%;
 				left: 50%;
