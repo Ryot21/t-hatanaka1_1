@@ -54,11 +54,11 @@
         </label>
 		<label id="" class="c-hnav__cheakbox c-hnav__close" for="c-hnav__checkbox"></label>
 		<div class="c-hnav__content">
-			<ul class="">
+			<ul class="grayOutLists">
 				<li class=""><a class="s-SS -ws-n -left"  href="index.html"><span class="s-M -f-En01 -ls-2 pdr5 pdr4s">TOP</span>トップ</a></li>
 				<li class="-active"><a class="s-SS -ws-n -left"  href="concept.html"><span class="s-M -f-En01 -ls-2 pdr5 pdr4s">CONCEPT</span>コンセプト</a></li>
 				<li class=""><a class="s-SS -ws-n -left"         href="1goutou.html"><span class="s-M -f-En01 -ls-2 pdr5 pdr4s">MODERN</span>1号棟</a></li>
-				<li class=""><a class="s-SS -ws-n -left -grayOut"  href="7goutou.html"><span class="s-M -f-En01 -ls-2 pdr5 pdr4s">NATURAL</span>7号棟</a></li>
+				<li class="-grayOut"><a class="s-SS -ws-n -left" href="7goutou.html"><span class="s-M -f-En01 -ls-2 pdr5 pdr4s">NATURAL</span>7号棟</a></li>
 				<li class=""><a class="s-SS -ws-n -left"         href="11goutou.html"><span class="s-M -f-En01 -ls-2 pdr5 pdr4s">VINTAGE</span>11号棟</a></li>
                 <li class=""><a class="s-SS -ws-n -left"         href="location.html"><span class="s-M -f-En01 -ls-2 pdr5 pdr4s">LOCATION</span>周辺環境</a></li>
                 <li class=""><a class="s-SS -ws-n -left"         href="https://www.jyukyo-cnst.co.jp/house/order/house-making/" target="_blank"><span class="s-M -f-En01 -ls-2 pdr5 pdr4s">QUALITY</span>住協の家づくり</a></li>
@@ -86,20 +86,21 @@
 	</nav>
 
     <!-- header / TOPと各ページの構造が異なる -->
-    <header id="header" class="tb-pc c-header pdt1">
-        <div class="c-header-wrapper">
-            <div class="tb-pc c-header__popArea">
+    <header id="header" class="c-header pdt1">
+        <div class="c-header-wrapper -no-b">
+            <div class="c-header__popArea">
                 <ul class="c-header__lists">
                     <li class="logo pdb2">
                         <div class="c-contents -h-logo">
                             <div class="imgBox">
                                 <!-- PCサイズ：757x110 -->
-                                <img class="tb-pc pdb1" src="images/SVG/top_banner.svg" alt="GRANCIA 3STYLE HOUSES あなたのライフスタイルを表現する邸宅">
+                                <img class="tb-pc pdb1" src="images/SVG/top_banner02.svg" alt="GRANCIA 3STYLE HOUSES あなたのライフスタイルを表現する邸宅">
                                 <!-- SPサイズ：325x110 -->
-                                <img class="sp" src="https://via.placeholder.com/325x110/?text=SP 325x110">
+                                <img class="sp" src="images/SVG/top_banner02_s.svg" alt="GRANCIA 3STYLE HOUSES あなたのライフスタイルを表現する邸宅">
                             </div>
-                            <!-- <div class="c-contentsBox -logo-item01"><img src="images/logo/site-logo-bird01.png" alt="動かす画像1"></div>
-                            <div class="c-contentsBox -logo-item02"><img src="images/logo/site-logo-bird02.png" alt="動かす画像2"></div> -->
+                            <div class="c-contentsBox -logo-item01 logo01 a-flipLeft -sp1"></div>
+                            <div class="c-contentsBox -logo-item02 logo02 a-flipLeft -sp3"></div>
+                            <div class="c-contentsBox -logo-item03 logo03 a-flipLeft -sp6"></div>
                             <!-- SOLD OUT -->
                             <!-- <div class="c-contentsBox -soldOut">
                                 <img src="images/item/soldout.png" alt="完売御礼 | おかげさまでお契約いただいきました！">
@@ -190,31 +191,62 @@
     <!-- コンテンツ -->
     <main class="c-container">
         <!-- ファーストビュー -->
-        <!-- デザイナーさんのデザインされた画像をそのまま使用すること（コンセプトのみ） -->
-
-        <div class="c-contents -f-view w1100 mgb3 mgb5s">
-            <div class="imgBox">
-                <img class="sp" src="https://via.placeholder.com/750x500/?text=SP 750x500">
-                <img class="tb-pc" src="https://via.placeholder.com/1920x900/?text=TB-PC 1920xFREE">
-            </div>
+        <div class="c-contents -f-view w1100 mgb1 mgb1s"><!-- 1号棟 -->
+            <div class="imgBox a-flipDown -sp2"><img src="images/slider/f-view01_pc.jpg" alt="1号棟のパース"></div>
             <!-- SPのみ / ページタイトル -->
-            <h1 class="sp c-contentsBox -f-title -f-title_c -concept -shadow -ws-n s-3L a-fade -sp3">CONCEPT</h1>
+            <h1 class="c-contentsBox -f-title -f-title_r -concept -f-En01 -ls-5 -white -ws-n s-3L a-fade -sp3">MODERN</h1>
+            <p class="c-contentsBox -f-icon -white"><img src="images/SVG/slash.svg" alt="/"></p>
+        </div>
+        <div class="c-contents -f-view w1100 mgb1 mgb1s"><!-- 7号棟 -->
+            <div class="imgBox a-flipDown -sp3"><img src="images/slider/f-view02_pc.jpg" alt="7号棟のパース"></div>
+            <!-- SPのみ / ページタイトル -->
+            <h1 class="c-contentsBox -f-title -f-title_r -concept -f-En01 -ls-5 -white -ws-n s-3L a-fade -sp3">NATURAL</h1>
+            <p class="c-contentsBox -f-icon -white"><img src="images/SVG/slash.svg" alt="/"></p>
+        </div>
+        <div class="c-contents -f-view w1100 mgb3 mgb5s"><!-- 11号棟 -->
+            <div class="imgBox a-flipDown -sp4"><img src="images/slider/f-view03_pc.jpg" alt="11号棟のパース"></div>
+            <!-- SPのみ / ページタイトル -->
+            <h1 class="c-contentsBox -f-title -f-title_r -concept -f-En01 -ls-5 -white -ws-n s-3L a-fade -sp3">VINTAGE</h1>
+            <p class="c-contentsBox -f-icon -white"><img src="images/SVG/slash.svg" alt="/"></p>
         </div>
         <!-- コンテンツ -->
         <div class="c-contents w1100 mgb10 mgb10s">
             <div class="c-contents-inner">
                 <!-- コンテンツ > タイトル -->
-                <h2 class="c-contents_MainTitle -icon -left -lh-n mgb2 mgb3s">
-                    ページタイトル
+                <h2 class="c-contents_MainTitle -icon -row02_s -left -lh-n pdl3 pdl5s mgb2 mgb3s">
+                    それぞれのスタイルを楽しむ邸別設計
                 </h2>
                 <!-- コンテンツ > 説明 -->
-                <p class="s-M -f-gothic -left -lh-1_5 -lh-1_5_s a-fadeUp -sc40">
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。<br><br>
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。<br><br>
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。<br><br>
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。<br class="tb-pc"><br class="tb-pc">
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。<br><br>
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。
+                <p class="s-M  -color03 -left -lh-1_5 mgb20 mgb10s a-fadeUp -sc40">
+                    住まいに新しい価値観を。<br>
+                    グランシア新座市畑中1丁目の新築戸建3棟は、ただ住むだけではない家をプランニングしました。<br class="tb-pc">
+                    [NATURAL] 　[VINTAGE]　[MODERN] ――<br>
+                    さまざまなスタイルで設計された住宅、自分の好きな空間に包まれながら送る生活。<br>
+                    住まいが日々の暮らし、休日の過ごし方まで演出してくれる。<br>
+                    "あなたのライフスタイルを表現できる邸宅"で、理想を思い描き、実現してください。
+                </p>
+                <!-- 区画図 -->
+                <div class="c-contents c-map mgb10 mgb10s">
+                        <!-- Image Map Generated by http://www.image-map.net/ -->
+                        <img usemap="#kukaku-map" src="./images/pic/kukaku_bg02.png">
+                        <map name="kukaku-map">
+                            <area class="target target01" href="/1goutou.html" target="" alt="畑中1丁目1期_1号棟" title="畑中1丁目1期_1号棟" coords="81,118,210,118,212,255,101,254,71,222" shape="poly">
+                            <area class="target target02" href="/11goutou.html" target="" alt="畑中1丁目1期_11号棟" title="畑中1丁目1期_11号棟" coords="94,321,62,350,53,441,214,439,215,322" shape="poly">
+                        </map>
+                        <!-- <p>ホバーされました！</p> -->
+
+                </div>
+                <!-- コンテンツ > タイトル -->
+                <h2 class="c-contents_MainTitle -icon -row02_s -left -lh-n pdl3 pdl6s mgb2 mgb3s">
+                    全区画30坪超の整形地、安心・快適な住宅地
+                </h2>
+                <!-- コンテンツ > 説明 -->
+                <p class="s-M  -color03 -left -lh-1_5 mgb20 mgb20s a-fadeUp -sc40">
+                    グランシア新座畑中1丁目は全11区画の開発分譲地。<br>
+                    約4.8mの開発道路は車止めにより通り抜けができないため、<br class="tb-pc">
+                    居住者以外の車や人の侵入が少なく防犯面も安心。近所のお子様同士で遊ぶ際も安全です。<br>
+                    2023年10月には日々のお買い物に便利な「OKマート」が徒歩圏内にオープン！
+                    安心・快適な住環境となっております。
                 </p>
             </div>
 

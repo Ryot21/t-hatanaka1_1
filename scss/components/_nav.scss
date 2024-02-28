@@ -116,6 +116,18 @@
 			a, label{
 				position: relative;
 				// display: inline-block;
+				&::after{
+					content: "";
+					position: absolute;
+					top: 50%;
+					left: -8%;
+					transform: translateY(-50%);
+					width: 3px;
+					height: 12px;
+					background-image: url(../images/logo/accent-icon_1.png);
+					opacity: 0;
+					transition: all 1s;
+				}
 				&::before{
 					content: "";
 					position: absolute;
@@ -147,27 +159,28 @@
 				&::after{
 					content: "";
 					position: absolute;
-					top: 50%;
-					left: -8%;
+					top: 45%;
+					left: -7.5%;
 					transform: translateY(-50%);
-					width: 12px;
-					height: 12px;
-					background-image: url(../images/logo/page-title-icon.png);
+					width: 10px;
+					height: 10px;
+					background-image: url(../images/logo/accent-icon_4.png);
 					background-size: contain;
 					background-repeat: no-repeat;
 					@include min(768){
-						left: -6%;
+						top: 40%;
+						left: -8%;
 						width: 10px;
 						height: 10px;
 					}
 					@include min(1200){
-						top: 47%;
+						top: 40%;
 						left: -12%;
 						width: 15px;
 						height: 15px;
 					}
 					@include min(1400){
-						left: -8%;
+						left: -6.8%;
 						width: 13px;
 						height: 13px;
 					}
@@ -177,11 +190,22 @@
 				transform: scale(1.05);
 				a, label{
 					color: $site-color01;
-					&::before{
-						background: $site-color01;
+					&::after{
+						opacity: 1;
+						// background-image: url(../images/logo/accent-icon_1.png);
 					}
+					// &::before{
+					// 	background: $site-color01;
+					// }
 					span{color: $site-color01;}
 				}
+			}
+		}
+		// アクセル停止
+		.grayOutLists{//ul
+			.-grayOut{//li
+				pointer-events: none;
+				opacity: .2;
 			}
 		}
 	}

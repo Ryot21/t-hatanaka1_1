@@ -54,7 +54,7 @@
     &.-icon{
         &::after{
             content: "";
-            background: url(../images/logo/page-title-icon.png);
+            background: url(../images/logo/accent-icon_4.png);
             background-size: contain;
             background-repeat: no-repeat;
             width: 15px;
@@ -85,7 +85,7 @@
         &.-row02_s{
             &::after{
                 @include max(768){
-                    top: 30%;
+                    top: 28%;
                 }
             }
         }

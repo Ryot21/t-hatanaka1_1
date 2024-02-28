@@ -19,24 +19,40 @@
 			position: absolute;
 			// ヘッダーロゴ
 			&.-logo{
-				&-item01{//緑色の鳥
-					top: 51%;
-					left: 101.5%;
-					width: 6.5%;
+				&-item01{//オレンジ
+					top: -2%;
+					left: 38.5%;
+					width: 5%;
+					height: 40%;
 					@include min(768){
-						top: 17.5%;
-						left: 30.8%;
-						width: 2.3%;
+						top: 5.5%;
+						left: 1.95%;
+						width: 2.9%;
+						height: 66%;
 					}
 				}
-				&-item02{//黄色の鳥
-					top: 32%;
-					left: 110%;
+				&-item02{//グレー&茶色
+					top: -2%;
+					left: 45.3%;
 					width: 5%;
+					height: 40%;
 					@include min(768){
-						top: 10%;
-						left: 33%;
-						width: 1.5%;
+						top: 5.5%;
+						left: 5.7%;
+						width: 2.9%;
+						height: 66%;
+					}
+				}
+				&-item03{//紺
+					top: -2%;
+					left: 51.8%;
+					width: 5%;
+					height: 40%;
+					@include min(768){
+						top: 5.5%;
+						left: 9.5%;
+						width: 2.9%;
+						height: 66%;
 					}
 				}
 			}
@@ -230,12 +246,18 @@
 					&.-plan{&::after{content: "プラン";}}
 					&.-equipment{&::after{content: "設備・仕様";}}
 					&.-location{&::after{content: "周辺環境";}}
-
 				}
 				@include min(768){// tb
 					top: 50%;
 					left: 75%;
 					width: 38%;
+					&.-f-title_r{
+						@include min(768){
+							top: 90%;
+							left: 92%;
+							width: auto !important;
+						}
+					}
 				}
 				@include min(1400){
 					top: 49%;
@@ -243,101 +265,15 @@
 					width: 40% !important;
 				}
 			}
-			&.-f-logo_s{
-				@include max(768){
-					top: 10%;
-					left: 50%;
-					transform: translate(-50%, -50%);
-					width: 70%;
-					z-index: 1;
-				}
-			}
-			&.-f-des{
-				bottom: 0;
-				left: 85%;
-				transform: translateX(-50%);
-				white-space: nowrap;
-				// width: auto;
+			&.-f-icon{
+				top: 77%;
+				left: 94%;
+				transform: translate(-50%, -50%);
+				width: 12%;
 				@include min(768){
-					left: 60%;
-					transform: scale(.8);
-				}
-				&.-w{
-					@include min(768){
-						left: 75%;
-					}
-				}
-			}
-			&.-f-bird{
-				&_01{// 青
-					top: 20%;
-					left: 15%;
+					top: 92%;
+					left: 98%;
 					width: 5%;
-					@include min(768){// tb
-						top: 10%;
-						left: 2%;
-						width: 4%;
-					}
-					@include min(1400){// pc
-						top: 10%;
-						left: 15%;
-						width: 3%;
-					}
-				}
-				&_02{// うすい
-					top: 20%;
-					left: 23%;
-					width: 3%;
-					@include min(768){// tb
-						top: 7%;
-						left: 7%;
-						width: 3%;
-					}
-					@include min(1400){// pc
-						left: 18%;
-						width: 2%;
-					}
-				}
-				&_03{// 黄色
-					top: 35%;
-					left: 77%;
-					width: 5%;
-					@include min(768){// tb
-						top: 21%;
-						left: 84%;
-						width: 2.5%;
-					}
-					@include min(1400){// pc
-						top: 18%;
-						left: 87%;
-						width: 2%;
-					}
-				}
-				&_04{// 緑
-					@include min(768){// tb
-						top: 60%;
-						left: 57%;
-						width: 2.5%;
-					}
-					@include min(1400){// pc
-						top: 63%;
-						left: 53%;
-						width: 2.5%;
-					}
-				}
-			}
-			&.-f-border{
-				top: 36%;
-				left: 25%;
-				width: 50%;
-				@include min(768){// tb
-					top: 22%;
-					left: 63.5%;
-					width: 20%;
-				}
-				@include min(1400){// pc
-					top: 20%;
-					left: 65%;
 				}
 			}
 			&.-f-text{
@@ -353,6 +289,12 @@
 		position: relative;
 		.c-contentsBox{
 			position: absolute;
+			&.-text{
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 100%;
+			}
 			// ヘッダーロゴ
 			&.-logo{
 				&-item01{//緑色の鳥
@@ -384,6 +326,16 @@
 					transform: translate(-50%, -50%);
 					width: 60%;
 					z-index: 1;
+				}
+			}
+
+			// 区画エリア
+			&.-no01{
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: auto;
+				a{display: inline-block;
 				}
 			}
 		}
