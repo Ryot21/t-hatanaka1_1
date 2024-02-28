@@ -231,7 +231,7 @@
 			transition: .5s all;
 			&:hover{
 				background: $site-color02;
-				span{color: $main-color--w;}
+				span{color: $main-color--w !important;}
 			}
 		}
 		.c-hnav__bottom{
@@ -241,7 +241,7 @@
 			transition: .5s all;
 			&:hover{
 				background: $site-color01;
-				span{color: $main-color--w;}
+				span{color: $main-color--w !important;}
 			}
 		}
 		&::after{

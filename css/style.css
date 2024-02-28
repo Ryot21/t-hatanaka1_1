@@ -255,19 +255,19 @@ h1.-f-En03, h2.-f-En03, h3.-f-En03, h4.-f-En03, h5.-f-En03, h6.-f-En03, p.-f-En0
   font-family: e-font03;
 }
 h1.-white, h2.-white, h3.-white, h4.-white, h5.-white, h6.-white, p.-white, a.-white, span.-white, label.-white, button.-white {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 h1.-color01, h2.-color01, h3.-color01, h4.-color01, h5.-color01, h6.-color01, p.-color01, a.-color01, span.-color01, label.-color01, button.-color01 {
-  color: #857e6b;
+  color: #857e6b !important;
 }
 h1.-color02, h2.-color02, h3.-color02, h4.-color02, h5.-color02, h6.-color02, p.-color02, a.-color02, span.-color02, label.-color02, button.-color02 {
-  color: #d37531;
+  color: #d37531 !important;
 }
 h1.-color03, h2.-color03, h3.-color03, h4.-color03, h5.-color03, h6.-color03, p.-color03, a.-color03, span.-color03, label.-color03, button.-color03 {
-  color: #3b3840;
+  color: #3b3840 !important;
 }
 h1.-color04, h2.-color04, h3.-color04, h4.-color04, h5.-color04, h6.-color04, p.-color04, a.-color04, span.-color04, label.-color04, button.-color04 {
-  color: #cacaca;
+  color: #cacaca !important;
 }
 h1.-house_c01, h2.-house_c01, h3.-house_c01, h4.-house_c01, h5.-house_c01, h6.-house_c01, p.-house_c01, a.-house_c01, span.-house_c01, label.-house_c01, button.-house_c01 {
   color: #b6b343;
@@ -3016,7 +3016,7 @@ button.swiper-pagination-bullet {
     pointer-events: none;
   }
   .c-header__navArea .c-header__navLists li.-active a, .c-header__navArea .c-header__navLists li.-active span {
-    color: #ffffff;
+    color: #ffffff !important;
   }
   .c-header__navArea .c-header__navLists li.-grayOutItem {
     pointer-events: none;
@@ -3601,7 +3601,7 @@ button.swiper-pagination-bullet {
   background: #d37531;
 }
 .c-hnav__contactArea .c-hnav__top:hover span {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .c-hnav__contactArea .c-hnav__bottom {
   display: block;
@@ -3613,7 +3613,7 @@ button.swiper-pagination-bullet {
   background: #857e6b;
 }
 .c-hnav__contactArea .c-hnav__bottom:hover span {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .c-hnav__contactArea::after {
   content: "";
@@ -4183,6 +4183,8 @@ button.swiper-pagination-bullet {
   transform: translateX(-50%);
   width: auto;
   font-size: 12px;
+  font-family: e-font01;
+  letter-spacing: 2px;
 }
 .c-contents_title::after {
   content: "";
@@ -4201,6 +4203,18 @@ button.swiper-pagination-bullet {
     bottom: -30px;
   }
 }
+.c-contents_title.-en-color01::before {
+  color: #857e6b;
+}
+.c-contents_title.-en-color02::before {
+  color: #d37531;
+}
+.c-contents_title.-en-color03::before {
+  color: #3b3840;
+}
+.c-contents_title.-en-color04::before {
+  color: #cacaca;
+}
 .c-contents_title.-layout::before {
   content: "LAYOUT PLAN / PLOT PLAN";
   white-space: nowrap;
@@ -4215,6 +4229,9 @@ button.swiper-pagination-bullet {
 }
 .c-contents_title.-gaikou::before {
   content: "EXTERIOR";
+}
+.c-contents_title.-naikan::before {
+  content: "NTROSPECTION";
 }
 .c-contents_title.-kitchen::before {
   content: "KITCHEN";
@@ -4266,7 +4283,7 @@ button.swiper-pagination-bullet {
   width: 15px;
   height: 15px;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 0%;
   transform: translateY(-50%);
 }
@@ -4276,12 +4293,29 @@ button.swiper-pagination-bullet {
     left: 0;
     width: 20px;
     height: 20px;
+    background-size: contain;
   }
 }
 @media (width >= 1400px) {
   .c-contents_MainTitle.-icon::after {
     top: 56%;
   }
+}
+.c-contents_MainTitle.-icon.-ver01::after {
+  background: url(../images/logo/page-title-icon.png);
+  background-size: contain;
+}
+.c-contents_MainTitle.-icon.-ver02::after {
+  background: url(../images/logo/accent-icon_4_1.png);
+  background-size: contain;
+}
+.c-contents_MainTitle.-icon.-ver03::after {
+  background: url(../images/logo/accent-icon_4_7.png);
+  background-size: contain;
+}
+.c-contents_MainTitle.-icon.-ver04::after {
+  background: url(../images/logo/accent-icon_4_11.png);
+  background-size: contain;
 }
 .c-contents_MainTitle.-icon.-row02::after {
   top: 30%;
@@ -4323,6 +4357,61 @@ button.swiper-pagination-bullet {
 }
 .c-contents_subTitle span {
   padding: 0 5px 0 5px;
+}
+.c-contents_subTitle.-icon::after {
+  content: "";
+  background: url(../images/logo/accent-icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 3px;
+  height: 15px;
+  position: absolute;
+  top: 55%;
+  left: 0%;
+  transform: translateY(-50%);
+}
+@media (width >= 768px) {
+  .c-contents_subTitle.-icon::after {
+    top: 53%;
+    left: 0;
+    width: 5px;
+    height: 20px;
+    background-size: contain;
+  }
+}
+@media (width >= 1400px) {
+  .c-contents_subTitle.-icon::after {
+    top: 56%;
+  }
+}
+.c-contents_subTitle.-icon.-ver01::after {
+  background: url(../images/logo/page-title-icon.png);
+  background-size: contain;
+}
+.c-contents_subTitle.-icon.-ver02::after {
+  background: url(../images/logo/accent-icon_1.png);
+  background-size: contain;
+}
+.c-contents_subTitle.-icon.-ver03::after {
+  background: url(../images/logo/accent-icon_7.png);
+  background-size: contain;
+}
+.c-contents_subTitle.-icon.-ver04::after {
+  background: url(../images/logo/accent-icon_11.png);
+  background-size: contain;
+}
+.c-contents_subTitle.-icon.-row02::after {
+  top: 30%;
+}
+@media (width >= 768px) {
+  .c-contents_subTitle.-icon.-row02::after {
+    top: 27%;
+  }
+}
+@media (768px >= width) {
+  .c-contents_subTitle.-icon.-row02_s::after {
+    top: 28%;
+  }
 }
 .c-contents_subTitle.-iconBox {
   padding-left: 5%;
