@@ -2674,6 +2674,10 @@ button.swiper-pagination-bullet {
   pointer-events: auto !important;
 }
 
+.logo-shadow {
+  filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.205));
+}
+
 .logo01 {
   background: #d37531;
 }
@@ -4086,7 +4090,7 @@ button.swiper-pagination-bullet {
 @media (width >= 768px) and (width >= 768px) {
   .c-contents.-f-view .c-contentsBox.-f-title.-f-title_r {
     top: 90%;
-    left: 92%;
+    left: 93%;
     width: auto !important;
   }
 }
@@ -4176,13 +4180,19 @@ button.swiper-pagination-bullet {
 .c-contents_title::before {
   content: "";
   position: absolute;
-  bottom: -45%;
+  bottom: -50%;
   left: 50%;
   transform: translateX(-50%);
   width: auto;
-  font-size: 12px;
+  font-size: 11px;
   font-family: e-font01;
   letter-spacing: 2px;
+}
+@media (width >= 768px) {
+  .c-contents_title::before {
+    bottom: -45%;
+    font-size: 12px;
+  }
 }
 .c-contents_title::after {
   content: "";
@@ -4225,7 +4235,7 @@ button.swiper-pagination-bullet {
   content: "HOUSE LAYOUT";
   white-space: nowrap;
 }
-.c-contents_title.-gaikou::before {
+.c-contents_title.-gaikan::before {
   content: "EXTERIOR";
 }
 .c-contents_title.-naikan::before {
@@ -4326,6 +4336,11 @@ button.swiper-pagination-bullet {
 @media (768px >= width) {
   .c-contents_MainTitle.-icon.-row02_s::after {
     top: 28%;
+  }
+}
+@media (768px >= width) {
+  .c-contents_MainTitle.-icon.-row03_s::after {
+    top: 17%;
   }
 }
 
@@ -4439,7 +4454,7 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-contents_subTitle.-stationBox {
-    padding-left: 15%;
+    padding-left: 13%;
   }
 }
 @media (width >= 1400px) {
@@ -4452,7 +4467,7 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-contents_subTitle.-stationBox.-ver02 {
-    padding-left: 15%;
+    padding-left: 13%;
   }
 }
 @media (width >= 1400px) {
