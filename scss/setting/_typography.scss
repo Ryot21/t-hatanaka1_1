@@ -41,6 +41,9 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
     // word-break: auto-phrase;
 	line-height: 1.3;
 
+    // 太さ
+    &.-f-w-n{font-weight: $f-n;}
+
     // ボーダー
     &.b-text{
         display: inline;

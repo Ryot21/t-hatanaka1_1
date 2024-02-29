@@ -64,7 +64,7 @@
 				&.logo{
 					width: 50%;
 					height: auto;
-					margin: auto auto auto 0;
+					margin: auto;
 					@include min(768){
 						width: calc(72%);
 						margin: auto;

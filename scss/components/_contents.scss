@@ -12,7 +12,7 @@
 			width: 95%;
 		}
 	}
-
+	// ヘッダー > ロゴ
 	&.-h-logo{
 		position: relative;
 		.c-contentsBox{
@@ -73,6 +73,44 @@
 			}
 		}
 	}
+	// ファーストビュー > ロゴ
+	&.-f-logoBox{
+		position: relative;
+		overflow: hidden;
+		.c-contentsBox{
+			position: absolute;
+			// ヘッダーロゴ
+			&.-f-logo{
+				&-item01{//オレンジ
+					top: 0;
+					left: 0;
+					width: 25%;
+					height: 80%;
+				}
+				&-item02{//グレー&茶色
+					top: 0;
+					left: 39%;
+					transform: translateX(-50%);
+					width: 25%;
+					height: 80%;
+
+				}
+				&-item03{//紺
+					top: 0;
+					left: auto;
+					right: 0;
+					width: 25%;
+					height: 80%;
+				}
+				&-item04{//STYLE HOUSE
+					bottom: 0;
+					left: 0;
+					width: 100%;
+				}
+			}
+
+		}
+	}
 
 	&.-f-slider,//スライダー
 	&.-f-view{  //ファーストビュー
@@ -87,23 +125,56 @@
 		.c-contentsBox{
 			position: absolute;
 			// ファーストビュー×スライダー関係
-			&.-f-title{
-				top: 27%;
+			// ファーストビュー > テキスト関係
+			&.-f-title01{
+				&_top{
+				top: 30%;
 				left: 50%;
 				transform: translate(-50%, -50%);
 				width: 80%;
 				filter: drop-shadow(.5px .5px 0px #ffffff6c);
-				@include min(768){// tb
-					top: 50%;
-					left: 80%;
-					width: 33%;
+				// overflow: hidden;
 				}
-				@include min(1400){
-					top: 50%;
-					left: 70%;
-					width: 30%;
+				&_btm{
+					top: 35%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 80%;
+					filter: drop-shadow(.5px .5px 0px #ffffff6c);
+				}
+				&_grancia{
+					top: 40%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 20%;
+					filter: drop-shadow(.5px .5px 0px #ffffff6c);
 				}
 			}
+			&.-f-title02{
+				&_top{
+					top: 76%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 80%;
+					filter: drop-shadow(.5px .5px 0px #ffffff6c);
+					// overflow: hidden;
+				}
+				&_btm{
+					top: 80%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 80%;
+					filter: drop-shadow(.5px .5px 0px #ffffff6c);
+				}
+				&_grancia{
+					top: 85%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 20%;
+					filter: drop-shadow(.5px .5px 0px #ffffff6c);
+				}
+			}
+
 			&.-f-des{
 				bottom: 1px;
 				left: 90%;
@@ -123,79 +194,6 @@
 					}
 				}
 			}
-			&.-f-bird{
-				&_01{// 青
-					top: 20%;
-					left: 15%;
-					width: 5%;
-					@include min(768){// tb
-						top: 10%;
-						left: 2%;
-						width: 4%;
-					}
-					@include min(1400){// pc
-						top: 10%;
-						left: 15%;
-						width: 3%;
-					}
-				}
-				&_02{// うすい
-					top: 20%;
-					left: 23%;
-					width: 3%;
-					@include min(768){// tb
-						top: 7%;
-						left: 7%;
-						width: 3%;
-					}
-					@include min(1400){// pc
-						left: 18%;
-						width: 2%;
-					}
-				}
-				&_03{// 黄色
-					top: 35%;
-					left: 77%;
-					width: 5%;
-					@include min(768){// tb
-						top: 23.5%;
-						left: 91%;
-						width: 2%;
-					}
-					@include min(1400){// pc
-						top: 13.5%;
-						left: 78%;
-						width: 1.8%;
-					}
-				}
-				&_04{// 緑
-					@include min(768){// tb
-						top: 57%;
-						left: 65%;
-						width: 1.5%;
-					}
-					@include min(1400){// pc
-						top: 60%;
-						left: 56%;
-						width: 1%;
-					}
-				}
-			}
-			&.-f-border{
-				top: 36%;
-				left: 25%;
-				width: 50%;
-				@include min(768){// tb
-					top: 25%;
-					left: 67%;
-					width: 24%;
-				}
-				@include min(1400){// pc
-					top: 17%;
-					left: 60%;
-					width: 18%;
-				}
-			}
 		}
 	}
 	&.-f-view{//ファーストビュー
@@ -207,6 +205,7 @@
 		}
 		.c-contentsBox{
 			position: absolute;
+
 			&.-f-title{
 				top: 50%;
 				left: 50%;
@@ -328,6 +327,29 @@
 					z-index: 1;
 				}
 			}
+			&.-f-logo{
+				top: 15%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 20%;
+				max-width: 80px;
+			}
+
+			&.-slash{
+				top: 50%;
+				width: 1.5px;
+				height: 250%;
+				background: $main-color--b;
+				transform: translate(-50%, -50%) rotate(45deg);
+				&-item01{left: 29%;}
+				&-item02{left: 65%;}
+				&-item03{left: 99%;}
+				&.-white{
+					width: 1px;
+					background: $main-color--w;
+				}
+			}
+
 
 			// 区画エリア
 			&.-no01{
