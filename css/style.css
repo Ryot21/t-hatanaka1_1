@@ -3460,7 +3460,7 @@ button.swiper-pagination-bullet {
   }
 }
 .c-hnav__content li {
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   transition: 1s all;
 }
 @media (width >= 768px) {
@@ -3799,6 +3799,30 @@ button.swiper-pagination-bullet {
   opacity: 0.9;
 }
 .navItem.-soldOut a span {
+  opacity: 0.5;
+}
+.navItem.-kanbai {
+  pointer-events: none;
+}
+.navItem.-kanbai a {
+  pointer-events: none;
+}
+.navItem.-kanbai a::before {
+  content: "完売御礼";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60% !important;
+  color: white;
+  background: rgb(216, 21, 21);
+  display: block;
+  z-index: 1;
+  text-align: center;
+  padding: 3px 0 4px;
+  opacity: 0.9;
+}
+.navItem.-kanbai a span {
   opacity: 0.5;
 }
 
@@ -4142,7 +4166,7 @@ button.swiper-pagination-bullet {
   top: 50%;
   width: 1.5px;
   height: 250%;
-  background: #3b3b3b;
+  background: black;
   transform: translate(-50%, -50%) rotate(45deg);
 }
 .c-contents.-imgBg .c-contentsBox.-slash-item01 {

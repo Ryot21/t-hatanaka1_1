@@ -109,7 +109,7 @@
 			max-width: 330px;
 		}
 		li{
-			margin-bottom: 5px;
+			margin-bottom: 7px;
 			transition: 1s all;
 			@include min(768){margin-bottom: 10px;}
 			@include min(1400){margin-bottom: 10px;}
@@ -201,7 +201,7 @@
 				}
 			}
 		}
-		// アクセル停止
+		// アクセス停止
 		.grayOutLists{//ul
 			.-grayOut{//li
 				pointer-events: none;
@@ -400,6 +400,30 @@
 				color: white;
 				// background: #e40012;
 				background: $site-color01;
+				display: block;
+				z-index: 1;
+				text-align: center;
+				padding: 3px 0 4px;
+				opacity: 0.9;
+			}
+			span{opacity: .5;}
+		}
+	}
+	// オプション > 完売御礼
+	&.-kanbai{
+		pointer-events: none;
+		a{
+			pointer-events: none;
+			&::before{
+				content: "完売御礼";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 60% !important;
+				color: white;
+				// background: #e40012;
+				background: rgb(216, 21, 21);
 				display: block;
 				z-index: 1;
 				text-align: center;
